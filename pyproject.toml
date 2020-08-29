@@ -9,6 +9,10 @@ homepage = "https://github.com/nkantar/sus"
 repository = "https://github.com/nkantar/sus"
 documentation = "https://github.com/nkantar/sus"
 
+packages = [
+  { include = "sus" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.8"
 
@@ -18,4 +22,4 @@ pytest-watch = "^4.2.0"
 pytest-mock = "^3.2.0"
 
 [scripts]
-sus = "src.sus:main"
+sus = "sus.sus:main"
