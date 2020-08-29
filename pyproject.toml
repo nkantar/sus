@@ -2,7 +2,12 @@
 name = "sus"
 version = "0.0.1"
 description = "sus: Really simple static website URL shortener"
+license = "MIT"
 authors = ["Nik Kantar <nik@nkantar.com>"]
+readme = "README.rst"
+homepage = "https://github.com/nkantar/sus"
+repository = "https://github.com/nkantar/sus"
+documentation = "https://github.com/nkantar/sus"
 
 [tool.poetry.dependencies]
 python = "^3.8"
