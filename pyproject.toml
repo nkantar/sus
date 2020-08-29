@@ -10,7 +10,7 @@ repository = "https://github.com/nkantar/sus"
 documentation = "https://github.com/nkantar/sus"
 
 packages = [
-  { include = "sus" }
+  { include = "src" }
 ]
 
 [tool.poetry.dependencies]
@@ -22,4 +22,8 @@ pytest-watch = "^4.2.0"
 pytest-mock = "^3.2.0"
 
 [scripts]
-sus = "sus.sus:main"
+sus = "src.sus:sus"
+
+[build-system]
+requires = ["setuptools >= 49.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
