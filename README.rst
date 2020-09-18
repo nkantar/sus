@@ -10,3 +10,4 @@ License
 -------
 
 This project is licensed under the MIT lcense. See ``LICENSE`` file for details.
+
