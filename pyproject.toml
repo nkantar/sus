@@ -9,8 +9,8 @@ homepage = "https://github.com/nkantar/sus"
 repository = "https://github.com/nkantar/sus"
 documentation = "https://github.com/nkantar/sus"
 
-keywords = [] # TODO #3
-classifiers = [] # TODO #4
+keywords = []
+classifiers = []
 
 packages = [
   { include = "src" },
