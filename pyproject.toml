@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "sus"
-description = "sus: Really simple static website URL shortener"
 version = "1.0.0"
+description = "Really simple static website URL shortener"
 license = "MIT"
 authors = ["Nik Kantar <nik@nkantar.com>"]
 readme = "README.rst"
