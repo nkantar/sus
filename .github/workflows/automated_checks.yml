@@ -19,16 +19,14 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install poetry --pre
-        poetry env use python${{ matrix.python-version }}
-        poetry install
+        pip install black pydocstyle mypy flake8 pytest
     - name: Format check with Black
-      run: make formatcheck
+      run: black src/ tests/ --check
     - name: Docstring style check with pydocstyle
-      run: make docstylecheck
+      run: pydocstyle src/
     - name: Type check with mypy
-      run: make typecheck
+      run: mypy src/ --strict
     - name: Lint with flake8
-      run: make lint
+      run: flake8 src/
     - name: Test with pytest
-      run: make test
+      run: pytest tests/
