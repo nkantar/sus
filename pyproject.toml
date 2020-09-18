@@ -12,7 +12,6 @@ documentation = "https://github.com/nkantar/sus"
 keywords = [] # TODO #3
 classifiers = [] # TODO #4
 
-# TODO #5
 packages = [
   { include = "src" },
 ]
