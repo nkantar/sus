@@ -9,8 +9,12 @@ homepage = "https://github.com/nkantar/sus"
 repository = "https://github.com/nkantar/sus"
 documentation = "https://github.com/nkantar/sus"
 
+keywords = [] # TODO #3
+classifiers = [] # TODO #4
+
+# TODO #5
 packages = [
-  { include = "src" }
+  { include = "src" },
 ]
 
 [tool.poetry.dependencies]
@@ -21,9 +25,9 @@ pytest = "^6.0.1"
 pytest-watch = "^4.2.0"
 pytest-mock = "^3.2.0"
 
-[scripts]
+[tool.poetry.scripts]
 sus = "src.sus:sus"
 
 [build-system]
-requires = ["setuptools >= 49.6.0", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
