@@ -13,8 +13,11 @@
 ## [Unreleased]
 
 
-## [0.0.1]
+## [1.0.0]
+
+### Added
+- Initial implementation
 
 
-[Unreleased]: https://github.com/nkantar/sus/compare/0.0.1...HEAD
-[0.0.1]: https://github.com/nkantar/sus/releases/tag/0.0.1
+[Unreleased]: https://github.com/nkantar/sus/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/nkantar/sus/releases/tag/1.0.0
