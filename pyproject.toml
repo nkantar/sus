@@ -24,6 +24,7 @@ pytest = "^6.0.1"
 pytest-watch = "^4.2.0"
 pytest-mock = "^3.2.0"
 black = "^20.8b1"
+pydocstyle = "^5.1.1"
 
 [tool.poetry.scripts]
 sus = "src.sus:sus"
