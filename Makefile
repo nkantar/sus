@@ -19,7 +19,7 @@ typecheck: ## run type check via mypy
 
 
 lint: ## run linter (flake8)
-	poetry run flake8
+	poetry run flake8 src/
 
 
 test: ## run tests
