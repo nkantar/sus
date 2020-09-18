@@ -23,9 +23,9 @@ SUFFIX = ".html"
 HTML = Template("<meta http-equiv='refresh' content='0;url=$url' />")
 
 
-def _ensure_dir(dir):
+def _ensure_dir(dir_):
     try:
-        dir.mkdir()
+        dir_.mkdir()
     except FileExistsError:
         pass
 
