@@ -11,6 +11,7 @@ See specific function docstrings and README for more details.
 
 from pathlib import Path
 from string import Template
+from typing import List, Tuple
 
 
 CURRENT_DIR = Path.cwd()
@@ -23,36 +24,36 @@ SUFFIX = ".html"
 HTML = Template("<meta http-equiv='refresh' content='0;url=$url' />")
 
 
-def _ensure_dir(dir_):
+def _ensure_dir(dir_: Path) -> None:
     try:
         dir_.mkdir()
     except FileExistsError:
         pass
 
 
-def _read_input():
+def _read_input() -> List[str]:
     with open(INPUT_FILE) as urls_file:
         lines = urls_file.read().splitlines()
         return lines
 
 
-def _sanitize_url(url):
+def _sanitize_url(url: str) -> str:
     santized_url = url.replace("'", "%27")
     return santized_url
 
 
-def _generate_page_params(line):
+def _generate_page_params(line: str) -> Tuple[str, str]:
     slug, url = line.split(SPLIT_CHAR, 1)
     html = HTML.substitute(url=_sanitize_url(url))
     return slug, html
 
 
-def _write_page(file_path, html):
+def _write_page(file_path: Path, html: str) -> None:
     with open(file_path, "w") as file_:
         file_.write(html)
 
 
-def _generate_page(slug, html):
+def _generate_page(slug: str, html: str) -> None:
     url_dir = OUTPUT_DIR / slug
     _ensure_dir(url_dir)
 
@@ -60,7 +61,7 @@ def _generate_page(slug, html):
     _write_page(index_path, html)
 
 
-def sus():
+def sus() -> None:
     """
     Run all of sus.
 
