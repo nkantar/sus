@@ -23,4 +23,4 @@ lint: ## run linter (flake8)
 
 
 test: ## run tests
-	poetry run pytest
+	poetry run pytest tests/
