@@ -11,7 +11,7 @@ formatcheck: ## run format check via black
 
 
 docstylecheck: ## run docstyle check via pydocstyle
-	poetry run docstylecheck
+	poetry run pydocstyle src/
 
 
 typecheck: ## run type check via mypy
