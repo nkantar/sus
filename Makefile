@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help formatcheck docstylecheck typecheck lint test all
+.PHONY: help formatcheck docstylecheck typecheck lint test all install
 
 
 help: ## this help dialog
@@ -32,3 +32,6 @@ all: ## run all validation
 	make typecheck
 	make lint
 	make test
+
+install: ## install all dependencies (including dev)
+	poetry install
