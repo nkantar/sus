@@ -25,6 +25,28 @@ Usage
 #. Voilà—your results are in the ``output/`` directory
 
 
+Input
+-----
+
+sus expects to find a file named ``input`` in the current directory, and each row
+consists of the redirect slug and destination URL, separated by a pipe (``|``).
+
+E.g.,
+
+.. code-block::
+
+    nk|https://nkantar.com
+    sus|https://github.com/nkantar/sus
+
+If I were serve the ``output/`` on `https://sus-example.nkantar.com`_, then
+`https://sus-example.nkantar.com/nk`_ would redirect to `https://nkantar.com`_ and
+`https://sus-example.nkantar.com/sus`_ would redirect to
+`https://github.com/nkantar/sus`_.
+
+Note: That example site exists, and its repository can be found at
+`https://github.com/nkantar/sus-example.nkantar.com`_.
+
+
 Development
 -----------
 
