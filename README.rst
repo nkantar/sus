@@ -21,7 +21,7 @@ Usage
 
 #. Install package
 #. Have an ``input`` file ready
-#. Run ``sus.py`` in the same directory as ``input``
+#. Run ``sus`` in the same directory as ``input``
 #. Voilà—your results are in the ``output/`` directory
 
 
@@ -38,13 +38,13 @@ E.g.,
     nk|https://nkantar.com
     sus|https://github.com/nkantar/sus
 
-If I were serve the ``output/`` on `https://sus-example.nkantar.com`_, then
-`https://sus-example.nkantar.com/nk`_ would redirect to `https://nkantar.com`_ and
-`https://sus-example.nkantar.com/sus`_ would redirect to
-`https://github.com/nkantar/sus`_.
+If I were serve the ``output/`` on `<https://sus-example.nkantar.com>`_, then
+`<https://sus-example.nkantar.com/nk>`_ would redirect to `<https://nkantar.com>`_ and
+`<https://sus-example.nkantar.com/sus>`_ would redirect to
+`<https://github.com/nkantar/sus>`_.
 
 Note: That example site exists, and its repository can be found at
-`https://github.com/nkantar/sus-example.nkantar.com`_.
+`<https://github.com/nkantar/sus-example.nkantar.com>`_.
 
 
 Development
