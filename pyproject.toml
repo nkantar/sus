@@ -9,11 +9,27 @@ homepage = "https://github.com/nkantar/sus"
 repository = "https://github.com/nkantar/sus"
 documentation = "https://github.com/nkantar/sus"
 
-keywords = []
-classifiers = []
+keywords = ["static", "url", "shortener"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Code Generators",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Text Processing :: Markup",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
 
 packages = [
   { include = "src" },
+]
+
+include = [
+  "LICENSE",
+  "README.rst",
 ]
 
 [tool.poetry.dependencies]
@@ -31,6 +47,10 @@ flake8 = "^3.8.3"
 [tool.poetry.scripts]
 sus = "src.sus:sus"
 
+# [build-system]
+# requires = ["setuptools", "wheel"]
+# build-backend = "setuptools.build_meta"
+
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
