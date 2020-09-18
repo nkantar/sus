@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 
 
+"""
+This is the main sus package file.
+
+It contains all functionality sus actually offers.
+See specific function docstrings and README for more details.
+"""
+
+
 from pathlib import Path
 from string import Template
 
@@ -53,6 +61,11 @@ def _generate_page(slug, html):
 
 
 def sus():
+    """
+    Run all of sus.
+
+    It runs the entire script to generate the output directory based on the input file.
+    """
     _ensure_dir(OUTPUT_DIR)
 
     lines = _read_input()
