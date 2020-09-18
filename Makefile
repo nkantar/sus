@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help formatcheck docstylecheck typecheck lint test
+.PHONY: help formatcheck docstylecheck typecheck lint test all
 
 
 help: ## this help dialog
@@ -24,3 +24,11 @@ lint: ## run linter (flake8)
 
 test: ## run tests
 	poetry run pytest tests/
+
+
+all: ## run all validation
+	make formatcheck
+	make docstylecheck
+	make typecheck
+	make lint
+	make test
