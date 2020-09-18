@@ -1,6 +1,10 @@
 name: Automated Checks
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   build:
