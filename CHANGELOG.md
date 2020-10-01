@@ -17,7 +17,10 @@
   - Pronunciation section
   - Python 3.6+ requirement
   - Homepage section
-- `make publish` and `make publish-test` for convenience
+- `make` commands for convenience
+  - `make package` creates the wheel and tarball for publishing to PyPI
+  - `make publish` publishes the above to PyPI
+  - `make publish-test` publishes the above to TestPyPI
 - Support for homepage via `home.html`
 
 ### Changed

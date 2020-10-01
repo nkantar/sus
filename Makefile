@@ -36,6 +36,9 @@ all: ## run all validation
 install: ## install all dependencies (including dev)
 	poetry install
 
+package: ## create wheel and tarball for PyPI
+	poetry build
+
 publish: ## publish on PyPI
 	poetry publish
 
