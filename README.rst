@@ -43,7 +43,7 @@ If one were to serve ``output/`` on `<https://sus-example.nkantar.com>`_, then
 `<https://sus-example.nkantar.com/sus>`_ would redirect to
 `<https://github.com/nkantar/sus>`_.
 
-Note: That example site exists, and its repository can be found at
+That example site exists, and its repository can be found at
 `<https://github.com/nkantar/sus-example.nkantar.com>`_.
 
 

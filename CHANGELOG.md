@@ -15,6 +15,9 @@
 ### Removed
 - Unused code
 
+### Changed
+- README phrasing
+
 ### Fixed
 - README typo
 
