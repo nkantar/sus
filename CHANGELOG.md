@@ -12,11 +12,11 @@
 
 ## [Unreleased]
 
-### Removed
-- Unused code
-
 ### Changed
 - README phrasing
+
+### Removed
+- Unused code
 
 ### Fixed
 - README typo
