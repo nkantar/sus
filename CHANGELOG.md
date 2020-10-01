@@ -15,6 +15,9 @@
 ### Removed
 - Unused code
 
+### Fixed
+- README typo
+
 
 ## [1.0.0] - 2020-09-17
 
