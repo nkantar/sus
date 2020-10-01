@@ -13,7 +13,7 @@ Installation
 
 .. code-block:: sh
 
-    # note: you'll need Python 3.6 or higher
+    # note: you’ll need Python 3.6 or higher
     pip install sus
 
 
@@ -51,15 +51,15 @@ That example site exists, and its repository can be found at
 Pronunciation
 -------------
 
-Much controversy has sparked around the pronunciation of the project's name (no, it
-hasn't).
+Much controversy has sparked around the pronunciation of the project’s name (no, it
+hasn’t).
 As such, here is the definitive guide on doing so, as conceived by the original author.
 Please note that—much like with
 `GIF <https://bits.blogs.nytimes.com/2013/05/23/battle-over-gif-pronunciation-erupts/>`_
-—others may have different ideas, and who's to say the author knows what he's talking
+—others may have different ideas, and who’s to say the author knows what he’s talking
 about anyway?
 
-"sus" is in this case pronounced as in "suspicious", and
+“sus” is in this case pronounced as in “suspicious”, and
 `Wiktionary <https://en.wiktionary.org/wiki/sus#English>`_ helpfully provides the
 following guide:
 
