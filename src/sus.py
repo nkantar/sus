@@ -10,6 +10,7 @@ See specific function docstrings and README for more details.
 
 
 from pathlib import Path
+from shutil import rmtree
 from string import Template
 from typing import List, Tuple
 
@@ -26,9 +27,11 @@ HTML = Template("<meta http-equiv='refresh' content='0;url=$url' />")
 
 def _ensure_dir(dir_: Path) -> None:
     try:
-        dir_.mkdir()
-    except FileExistsError:
+        rmtree(dir_)
+    except FileNotFoundError:
         pass
+    finally:
+        dir_.mkdir()
 
 
 def _read_input() -> List[str]:

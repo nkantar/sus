@@ -20,6 +20,9 @@
 ### Changed
 - README phrasing
 - Primes (`'`) and double primes (`"`) into apostrophes (`’`) and double quotes (`“` and `”`) in documentation
+- Delete every directory before creating it:
+  - `output/`
+  - every slug directory inside `output/`
 
 ### Removed
 - Unused code
