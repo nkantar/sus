@@ -13,8 +13,9 @@
 ## [Unreleased]
 
 ### Added
-- Pronunciation section in README
-- Python 3.6+ requirement in README > Installation
+- README:
+  - Pronunciation section
+  - Python 3.6+ requirement
 
 ### Changed
 - README phrasing
