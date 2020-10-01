@@ -10,17 +10,19 @@ See specific function docstrings and README for more details.
 
 
 from pathlib import Path
-from shutil import rmtree
+from shutil import copy, rmtree
 from string import Template
 from typing import List, Tuple
 
+
+SPLIT_CHAR = "|"
+SUFFIX = ".html"
 
 CURRENT_DIR = Path.cwd()
 INPUT_FILE = CURRENT_DIR / "input"
 OUTPUT_DIR = CURRENT_DIR / "output"
 
-SPLIT_CHAR = "|"
-SUFFIX = ".html"
+HOME_INDEX_FILE = (CURRENT_DIR / "home").with_suffix(SUFFIX)
 
 HTML = Template("<meta http-equiv='refresh' content='0;url=$url' />")
 
@@ -64,6 +66,14 @@ def _generate_page(slug: str, html: str) -> None:
     _write_page(index_path, html)
 
 
+def _copy_home() -> None:
+    output_home = (OUTPUT_DIR / "index").with_suffix(SUFFIX)
+    try:
+        copy(HOME_INDEX_FILE, output_home)
+    except FileNotFoundError:
+        pass
+
+
 def sus() -> None:
     """
     Run all of sus.
@@ -76,6 +86,8 @@ def sus() -> None:
     for line in lines:
         slug, html = _generate_page_params(line)
         _generate_page(slug, html)
+
+    _copy_home()
 
 
 if __name__ == "__main__":

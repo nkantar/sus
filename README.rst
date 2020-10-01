@@ -22,6 +22,7 @@ Usage
 
 #. Install package
 #. Have an ``input`` file ready
+#. Have a ``home.html`` file ready (optional)
 #. Run ``sus`` in the same directory as ``input``
 #. Voilà—your results are in the ``output/`` directory
 
@@ -46,6 +47,14 @@ If one were to serve ``output/`` on `<https://sus-example.nkantar.com>`_, then
 
 That example site exists, and its repository can be found at
 `<https://github.com/nkantar/sus-example.nkantar.com>`_.
+
+
+Homepage
+--------
+
+If sus finds a ``home.html`` file next to ``input``, it will copy it to
+``output/index.html``, thereby generating a homepage.
+If it doesn’t, it will simply carry on.
 
 
 Pronunciation

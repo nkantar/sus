@@ -16,7 +16,9 @@
 - README:
   - Pronunciation section
   - Python 3.6+ requirement
+  - Homepage section
 - `make publish` and `make publish-test` for convenience
+- Support for homepage via `home.html`
 
 ### Changed
 - README phrasing
