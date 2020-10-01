@@ -12,6 +12,9 @@
 
 ## [Unreleased]
 
+
+## [1.1.0] - 2020-09-30
+
 ### Added
 - README:
   - Pronunciation section
@@ -43,5 +46,6 @@
 - Initial implementation
 
 
-[Unreleased]: https://github.com/nkantar/sus/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/nkantar/sus/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/nkantar/sus/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/nkantar/sus/releases/tag/1.0.0
