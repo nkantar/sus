@@ -21,7 +21,6 @@
 - README phrasing
 - Primes (`'`) and double primes (`"`) into apostrophes (`’`) and double quotes (`“` and `”`) in documentation
 
-
 ### Removed
 - Unused code
 
