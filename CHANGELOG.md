@@ -16,6 +16,7 @@
 - README:
   - Pronunciation section
   - Python 3.6+ requirement
+- `make publish` and `make publish-test` for convenience
 
 ### Changed
 - README phrasing

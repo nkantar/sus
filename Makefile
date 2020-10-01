@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help formatcheck docstylecheck typecheck lint test all install
+.PHONY: help formatcheck docstylecheck typecheck lint test all install publish publish-test
 
 
 help: ## this help dialog
@@ -35,3 +35,9 @@ all: ## run all validation
 
 install: ## install all dependencies (including dev)
 	poetry install
+
+publish: ## publish on PyPI
+	poetry publish
+
+publish-test: ## publish on TestPyPI
+	poetry publish -r testpypi
