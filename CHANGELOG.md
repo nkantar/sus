@@ -12,6 +12,9 @@
 
 ## [Unreleased]
 
+### Added
+- Pronunciation section in README
+
 ### Changed
 - README phrasing
 

@@ -47,6 +47,26 @@ That example site exists, and its repository can be found at
 `<https://github.com/nkantar/sus-example.nkantar.com>`_.
 
 
+Pronunciation
+-------------
+
+Much controversy has sparked around the pronunciation of the project's name (no, it
+hasn't).
+As such, here is the definitive guide on doing so, as conceived by the original author.
+Please note that—much like with
+`GIF <https://bits.blogs.nytimes.com/2013/05/23/battle-over-gif-pronunciation-erupts/>`_
+—others may have different ideas, and who's to say the author knows what he's talking
+about anyway?
+
+"sus" is in this case pronounced as in "suspicious", and
+`Wiktionary <https://en.wiktionary.org/wiki/sus#English>`_ helpfully provides the
+following guide:
+
+- `IPA <https://en.wiktionary.org/wiki/Wiktionary:International_Phonetic_Alphabet>`_ (`key <https://en.wiktionary.org/wiki/Appendix:English_pronunciation>`_): /sʌs/
+- Rhymes: `-ʌs <https://en.wiktionary.org/wiki/Rhymes:English/%CA%8Cs>`_
+- `Homophone <https://en.wiktionary.org/wiki/Appendix:Glossary#homophone>`_: `suss <https://en.wiktionary.org/wiki/suss#English>`_
+
+
 Development
 -----------
 
