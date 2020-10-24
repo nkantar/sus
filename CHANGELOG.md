@@ -12,6 +12,9 @@
 
 ## [Unreleased]
 
+### Aded
+- `_ensure_dir` tests
+
 
 ## [1.1.0] - 2020-09-30
 
