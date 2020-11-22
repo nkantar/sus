@@ -12,6 +12,9 @@
 
 ## [Unreleased]
 
+### Added
+- Stripping of edge whitespace in line parts in `input`.
+
 
 ## [1.1.0] - 2020-09-30
 
