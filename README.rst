@@ -37,8 +37,8 @@ E.g.,
 
 .. code-block::
 
-    nk|https://nkantar.com
-    sus|https://github.com/nkantar/sus
+    nk | https://nkantar.com
+    sus | https://github.com/nkantar/sus
 
 If one were to serve ``output/`` on `<https://sus-example.nkantar.com>`_, then
 `<https://sus-example.nkantar.com/nk>`_ would redirect to `<https://nkantar.com>`_ and
