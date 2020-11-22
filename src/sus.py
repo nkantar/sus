@@ -48,7 +48,8 @@ def _sanitize_url(url: str) -> str:
 
 
 def _generate_page_params(line: str) -> Tuple[str, str]:
-    slug, url = line.split(SPLIT_CHAR, 1)
+    # strip edge whitespace while splitting
+    slug, url = [line_part.strip() for line_part in line.split(SPLIT_CHAR, 1)]
     html = HTML.substitute(url=_sanitize_url(url))
     return slug, html
 
