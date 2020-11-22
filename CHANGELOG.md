@@ -2,7 +2,7 @@
 
 <!--
 - Added: for new features
-- Changed for changes in existing functionality
+- Changed: for changes in existing functionality
 - Deprecated: for soon-to-be removed features
 - Removed: for now removed features
 - Fixed: for any bug fixes
@@ -11,6 +11,12 @@
 
 
 ## [Unreleased]
+
+
+## [1.2.0] - 2020-11-22
+
+### Added
+- Stripping of edge whitespace in line parts in `input`.
 
 
 ## [1.1.0] - 2020-09-30
@@ -46,6 +52,7 @@
 - Initial implementation
 
 
-[Unreleased]: https://github.com/nkantar/sus/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/nkantar/sus/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/nkantar/sus/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/nkantar/sus/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/nkantar/sus/releases/tag/1.0.0
