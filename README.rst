@@ -32,6 +32,7 @@ Input
 
 sus expects to find a file named ``input`` in the current directory, and each row
 consists of the redirect slug and destination URL, separated by a pipe (``|``).
+Lines starting with the hash ``#`` are considered comments and thus ignored.
 
 E.g.,
 
@@ -39,6 +40,7 @@ E.g.,
 
     nk | https://nkantar.com
     sus | https://github.com/nkantar/sus
+    # this is a comment and will be ignored
 
 If one were to serve ``output/`` on `<https://sus-example.nkantar.com>`_, then
 `<https://sus-example.nkantar.com/nk>`_ would redirect to `<https://nkantar.com>`_ and

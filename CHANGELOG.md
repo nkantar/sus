@@ -12,6 +12,9 @@
 
 ## [Unreleased]
 
+### Added
+- Comment support (lines starting with `#`)
+
 
 ## [1.2.0] - 2020-11-22
 

@@ -85,6 +85,9 @@ def sus() -> None:
 
     lines = _read_input()
     for line in lines:
+        if line.startswith("#"):
+            continue  # ignore comments
+
         slug, html = _generate_page_params(line)
         _generate_page(slug, html)
 
