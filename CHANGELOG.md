@@ -14,6 +14,7 @@
 
 ### Added
 - Comment support (lines starting with `#`)
+- Blank line support, for legibility
 
 
 ## [1.2.0] - 2020-11-22
