@@ -12,6 +12,10 @@
 
 ## [Unreleased]
 
+### Added
+- Python 3.9 and 3.10 to CI
+- Trove classifiers to project config
+
 
 ## [1.3.0] - 2021-10-16
 
