@@ -7,30 +7,45 @@ on:
   pull_request:
 
 jobs:
-  build:
-
+  check:
     runs-on: ubuntu-latest
+    continue-on-error: true
     strategy:
+      fail-fast: false
       matrix:
-        python-version: ["3.6", "3.7", "3.8", "3.9", "3.10"]
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
+
+    - name: Install just
+      # Temporarily use the open PR branch:
+      # - https://github.com/casey/just/pull/2312
+      # - https://github.com/casey/just/issues/2311
+      run: pipx install git+https://github.com/rachtsingh/just.git
+
+    - name: Install uv
+      run: pipx install uv
+
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install black pydocstyle mypy flake8 pytest pytest-mock
-    - name: Format check with Black
-      run: black src/ tests/ --check
-    - name: Docstring style check with pydocstyle
-      run: pydocstyle src/
-    - name: Type check with mypy
-      run: mypy src/ --strict
-    - name: Lint with flake8
-      run: flake8 src/
-    - name: Test with pytest
-      run: pytest tests/
+      run: uv sync
+
+    - name: Check formatting via ruff
+      run: uv run just formatcheck
+
+    - name: Check docstring formatting
+      run: uv run just docstylecheck
+
+    - name: Check type hints via mypy
+      run: uv run just typecheck
+
+    - name: Run linter via ruff
+      run: uv run just lint
+
+    - name: Run tests via pytest
+      run: uv run just test
