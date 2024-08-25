@@ -13,8 +13,10 @@
 ## [Unreleased]
 
 ### Added
-- Python 3.9 and 3.10 to CI
-- Trove classifiers to project config
+- Python 3.11, and 3.12 to CI version matrix
+
+### Removed
+- Python 3.6, 3.7, and 3.8 from CI version matrix
 
 
 ## [1.3.0] - 2021-10-16
