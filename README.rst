@@ -87,10 +87,12 @@ following guide:
 Development
 -----------
 
-The project by default uses `Poetry <https://python-poetry.org/>`_, and ``make install``
-should get you up and running with all the dev dependencies.
-After that see other ``make`` commands for convenience.
-They correspond to CI checks required for changes to be merged in.
+The project uses `uv <https://github.com/astral-sh/uv>`_,
+`just <https://github.com/casey/just>`_,
+and `modd <https://github.com/cortesi/modd>`_.
+Running ``uv sync`` should get you set up for local development,
+``uv run just -l`` should show you some optional commands,
+and ``uv run modd`` is probably most useful while making changes.
 
 The ``main`` branch is the bleeding edge version.
 `Git tags <https://github.com/nkantar/sus/tags>`_ correspond to releases.
