@@ -13,7 +13,7 @@ Installation
 
 .. code-block:: sh
 
-    # note: you’ll need Python 3.6 or higher
+    # note: you’ll need Python 3.9 or higher
     pip install sus
 
 
