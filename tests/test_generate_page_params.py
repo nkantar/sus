@@ -1,7 +1,7 @@
-from src.sus import _generate_page_params
+from sus.sus import _generate_page_params
 
 
-def test_generate_page_params_easy():
+def test_generate_page_params_easy() -> None:
     line = "foo|https://example.com/foo"
     slug, html = _generate_page_params(line)
 
@@ -11,7 +11,7 @@ def test_generate_page_params_easy():
     )
 
 
-def test_generate_page_params_pipe():
+def test_generate_page_params_pipe() -> None:
     line = "foo|https://example.com/foo|bar"
     slug, html = _generate_page_params(line)
 
@@ -22,7 +22,7 @@ def test_generate_page_params_pipe():
     )
 
 
-def test_generate_page_params_quote():
+def test_generate_page_params_quote() -> None:
     line = "foo|https://example.com/foo'bar"
     slug, html = _generate_page_params(line)
 
@@ -33,7 +33,7 @@ def test_generate_page_params_quote():
     )
 
 
-def test_generate_page_params_whitespace():
+def test_generate_page_params_whitespace() -> None:
     line = "\tfoo  |\nhttps://example.com/foo "
     slug, html = _generate_page_params(line)
 

@@ -8,7 +8,6 @@ It contains all functionality sus actually offers.
 See specific function docstrings and README for more details.
 """
 
-
 from pathlib import Path
 from shutil import copy, rmtree
 from string import Template
