@@ -6,6 +6,8 @@ Simple idea: generate a static site with a bunch of
 ``redirect-slug-goes-here/index.html`` files with nothing but an HTML redirect in them.
 
 .. image:: https://github.com/nkantar/sus/workflows/Automated%20Checks/badge.svg
+        :target: https://github.com/nkantar/sus/actions/workflows/automated_checks.yml
+        :alt: GitHub Actions
 
 
 Installation
