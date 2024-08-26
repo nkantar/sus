@@ -14,7 +14,8 @@
 ## [Unreleased]
 
 ### Added
-- Python 3.11, and 3.12 to CI version matrix
+- Python 3.11, 3.12, and 3.13-dev to CI version matrix
+- macOS and Windows to CI OS matrix
 
 ### Removed
 - Python 3.6, 3.7, and 3.8 from CI version matrix
