@@ -17,6 +17,9 @@
 - Python 3.11, 3.12, 3.13, and 3.14-dev to CI version matrix
 - macOS and Windows to CI OS matrix
 
+### Changed
+- Pointed example URLs to the new domain
+
 ### Removed
 - Python 3.6, 3.7, and 3.8 from CI version matrix
 

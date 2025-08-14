@@ -47,13 +47,13 @@ E.g.,
     # this is a comment and will be ignored
     # the blank line above will also be ignored
 
-If one were to serve ``output/`` on `<https://sus-example.nkantar.com>`_, then
-`<https://sus-example.nkantar.com/nk>`_ would redirect to `<https://nkantar.com>`_ and
-`<https://sus-example.nkantar.com/sus>`_ would redirect to
+If one were to serve ``output/`` on `<https://sus-example.pileof.tools>`_, then
+`<https://sus-example.pileof.tools/nk>`_ would redirect to `<https://nkantar.com>`_ and
+`<https://sus-example.pileof.tools/sus>`_ would redirect to
 `<https://github.com/nkantar/sus>`_.
 
 That example site exists, and its repository can be found at
-`<https://github.com/nkantar/sus-example.nkantar.com>`_.
+`<https://github.com/nkantar/sus-example.pileof.tools>`_.
 
 
 Homepage
